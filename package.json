@@ -1,0 +1,36 @@
+{
+  "name": "rmq-rpc",
+  "version": "0.1.0",
+  "description": "RabbitMQ RPC client and server",
+  "keywords": [
+    "rabbitmq",
+    "rmq",
+    "rpc"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/asynchronium/rmq-rpc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asynchronium/rmq-rpc"
+  },
+  "bugs": {
+    "url": "https://github.com/asynchronium/rmq-rpc/issues",
+    "email": "broadsw.rd@yandex.ru"
+  },
+  "author": {
+    "name": "Vladimir Bykov",
+    "email": "broadsw.rd@yandex.ru",
+    "url": "https://github.com/broadsw0rd"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "devDependencies": {
+    "snazzy": "7.0.0",
+    "standard": "^10.0.3"
+  },
+  "scripts": {
+    "check": "standard lib/*.js | snazzy"
+  }
+}
