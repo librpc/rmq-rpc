@@ -80,9 +80,10 @@ function main (channel) {
   client.setup(channel)
 }
 
-var connected = open
+open
   .then(connection => connection.createChannel())
   .then(main)
+  .catch(console.warn)
 
 var app = express()
 
