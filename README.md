@@ -117,11 +117,15 @@ app.listen(argv.port, function () {
 
 #### `#constructor({ name, methods })`
 
+#### `#setup(channel)`
+
 #### `#emit(eventName, data)`
 
 ### RpcClient
 
 #### `#constructor({ name })`
+
+#### `#setup(channel)`
 
 #### `#call(method, data, { timeout = 5000 })`
 
