@@ -71,7 +71,7 @@ open
 // client.js
 var express = require('express')
 var argv = require('minimist')(process.argv.slice(2))
-var open = require('amqplib').connect(argv.rmq)
+var open = require('amqplib').connect('amqp://localhost')
 var RpcClient = require('rmq-rpc').Client
 
 var client = new RpcClient({ name: 'math' })
