@@ -30,7 +30,7 @@
 ```js
 // server.js
 var open = require('amqplib').connect('amqp://localhost')
-var RpcServer = require('./lib/rmq-rpc').Server
+var RpcServer = require('rmq-rpc').Server
 
 var server = new RpcServer({
   name: 'math',
@@ -71,8 +71,8 @@ open
 // client.js
 var express = require('express')
 var argv = require('minimist')(process.argv.slice(2))
-var open = require('amqplib').connect('amqp://localhost')
-var RpcClient = require('./lib/rmq-rpc').Client
+var open = require('amqplib').connect(argv.rmq)
+var RpcClient = require('rmq-rpc').Client
 
 var client = new RpcClient({ name: 'math' })
 
